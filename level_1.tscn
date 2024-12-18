@@ -12,8 +12,6 @@ texture = ExtResource("1_t6oxb")
 stretch_mode = 1
 
 [node name="Player" parent="." instance=ExtResource("2_oxcmf")]
-position = Vector2(551, 49)
 
 [node name="Player2" parent="." instance=ExtResource("2_oxcmf")]
-position = Vector2(336, 52)
 gravity_scale = 1.0
