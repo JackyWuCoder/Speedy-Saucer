@@ -1,30 +1,22 @@
 extends RigidBody2D
 
+func _ready():
+	print(add(10, 5))
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	# < > == != >= <=
-	var test = 5
-	if test > 5:
-		print("True")
-		print("Second message")
-	elif test == 5:
-		print("Test is 5")
-	else:
-		print("False")
-		
-	var message = "Hello"
-	if message == "Hello":
-		print("Hi there")
-	elif message == "Bye":
-		print("Goodbye!")
-	elif message == "Thanks":
-		print("Thank you")
-	else:
-		print("Invalid message")
-
-func _process(delta):
-	pass
-	
 func _physics_process(delta):
-	apply_force(Vector2(25, 0)) 
+	var force = 1000
+	if Input.is_action_pressed("move_right"):
+		apply_force(Vector2(force, 0))
+	if Input.is_action_pressed("move_left"):
+		apply_force(Vector2(-force, 0)) 
+	if Input.is_action_pressed("move_up"):
+		apply_force(Vector2(0, -force))
+	if Input.is_action_pressed("move_down"):
+		apply_force(Vector2(0, force)) 
+
+func test():
+	var t = 10
+	return (t+10)
+	
+func add(num1, num2):
+	return num1 + num2
