@@ -7,3 +7,7 @@ func _ready() -> void:
 	
 func _on_maze_body_exited(body):
 	print("body out")
+
+
+func _on_maze_body_entered(body: Node2D) -> void:
+	print("body in")
