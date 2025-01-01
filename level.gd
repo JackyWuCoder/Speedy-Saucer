@@ -5,4 +5,5 @@ extends Node2D
 func _ready() -> void:
 	print("Hello, world!")
 	
-	
+func _on_maze_body_exited(body):
+	print("body out")
