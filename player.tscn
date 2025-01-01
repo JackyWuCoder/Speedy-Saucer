@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b3mgid4miwvs2" path="res://ufoGreen.png" id="1_kctx1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_72mut"]
-radius = 28.3333
+radius = 12.1335
 
 [node name="Player" type="RigidBody2D"]
 scale = Vector2(0.6, 0.6)
